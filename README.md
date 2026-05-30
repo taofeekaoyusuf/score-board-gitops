@@ -31,7 +31,7 @@ To execute this architecture locally or on a cloud platform, verify the installa
 * **Argo CD** installed on your cluster:
   ```bash
   kubectl create namespace argocd
-  kubectl apply -n argocd -f [https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml(https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml)
+  kubectl apply -n argocd -f [https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml](https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml)
 
 This application can be forked and modified as pleased for more robustness.
 
