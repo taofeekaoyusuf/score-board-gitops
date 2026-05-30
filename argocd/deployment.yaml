@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: scoreBoard-app
+  name: score-board-app
   namespace: production
   labels:
-    app: scoreBoard-app
+    app: score-board-app
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: scoreBoard-app
+      app: score-board-app
   template:
     metadata:
       labels:
-        app: scoreBoard-app
+        app: score-board-app
     spec:
       containers:
-      - name: scoreBoard-app
-        image: dhackbility/scoreBoard-app:2.0
+      - name: score-board-app
+        image: dhackbility/score-board-app:2.0
         resources:
           requests:
             cpu: "100m"
@@ -31,7 +31,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: scoreBoard-app-service
+  name: score-board-app-service
   namespace: production
 spec:
   type: ClusterIP
@@ -39,4 +39,4 @@ spec:
   - port: 80
     targetPort: 80
   selector:
-    app: scoreBoard-app
+    app: score-board-app
