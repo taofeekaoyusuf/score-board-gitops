@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: scoreBoard-app
+  namespace: production
+  labels:
+    app: scoreBoard-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: scoreBoard-app
+  template:
+    metadata:
+      labels:
+        app: scoreBoard-app
+    spec:
+      containers:
+      - name: scoreBoard-app
+        image: dhackbility/scoreBoard-app:2.0
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "250m"
+            memory: "256Mi"
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: scoreBoard-app-service
+  namespace: production
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app: scoreBoard-app
