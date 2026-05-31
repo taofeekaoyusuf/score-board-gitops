@@ -1,4 +1,4 @@
-# Enterprise GitOps CI/CD Pipeline with Jenkins & Argo CD
+# Automated Enterprise GitOps CI/CD Pipeline with SonarQube Cloud, Jenkins & Argo CD
 
 This is the complimentary repository for the deployment of the [Score Board Application](https://github.com/taofeekaoyusuf/score-board-app.git) showcasing a complete modern GitOps software delivery pipeline. Source code changes trigger an automated build and security checking workflow, culminating in automated, zero-touch Kubernetes deployments via declarative desired-state configuration syncing.
 
