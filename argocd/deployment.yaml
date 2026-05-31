@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: score-board-app
-        image: dhackbility/score-board-app:jenkins-score-board-app-gitops-pipeline-35
+        image: dhackbility/score-board-app:jenkins-score-board-app-4
         resources:
           requests:
             cpu: "100m"
