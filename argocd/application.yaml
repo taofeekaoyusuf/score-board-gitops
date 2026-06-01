@@ -6,11 +6,11 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/taofeekaoyusuf/score-board-gitops.git'
-    targetRevision: HEAD
+    repoURL: https://github.com/taofeekaoyusuf/score-board-gitops.git
+    targetRevision: main
     path: argocd
   destination:
-    server: 'https://kubernetes.default.svc'
+    server: https://kubernetes.default.svc
     namespace: production
   syncPolicy:
     automated:
