@@ -41,6 +41,8 @@ To execute this architecture locally or on a cloud platform, verify the installa
   ![Argo CD login interface showing the username and password fields in the web application](image.png)
   - After login into ArgoCD, you will be met with the deployed Application, thus:
   ![Argo CD deployed application page showing the application status in the browser interface](image-2.png)
+  - ArgoCD deployed application status:
+  ![ArgoCD Application Status](image.png)
 
 The complimentary GitOps Repository can found [here](https://github.com/taofeekaoyusuf/score-board-gitops)
 
