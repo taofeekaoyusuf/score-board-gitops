@@ -38,7 +38,7 @@ To execute this architecture locally or on a cloud platform, verify the installa
       Username: admin
       Password: Run this command to get the Password: `kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d && echo`
   - ArgoCD login Interface:
-  ![Argo CD login interface showing the username and password fields in the web application](image.png)
+  ![Argo CD login interface showing the username and password fields in the web application](image-1.png)
   - After login into ArgoCD, you will be met with the deployed Application, thus:
   ![Argo CD deployed application page showing the application status in the browser interface](image-2.png)
   - ArgoCD deployed application status:
