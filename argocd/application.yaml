@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/taofeekaoyusuf/score-board-app.git'
+    repoURL: 'https://github.com/taofeekaoyusuf/score-board-gitops.git'
     targetRevision: HEAD
     path: argocd
   destination:
