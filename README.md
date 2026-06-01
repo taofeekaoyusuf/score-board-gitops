@@ -6,7 +6,7 @@ This is the complimentary repository for the deployment of the [Score Board Appl
 
 #### This is an application to record the scores of any game being played by two Opponents.
 
-<img width="3024" height="1612" alt="image" src="https://github.com/user-attachments/assets/0951d038-0e90-42fd-8520-1a6377caafca" />
+<img width="3024" height="1612" alt="Scoreboard application interface showing two opponent names and their scores in a web dashboard layout" src="https://github.com/user-attachments/assets/0951d038-0e90-42fd-8520-1a6377caafca" />
 
 ## Architecture Flow
 
@@ -38,9 +38,9 @@ To execute this architecture locally or on a cloud platform, verify the installa
       Username: admin
       Password: Run this command to get the Password: `kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d && echo`
   - ArgoCD login Interface:
-  ![argocd_login_interface](image.png)
+  ![Argo CD login interface showing the username and password fields in the web application](image.png)
   - After login into ArgoCD, you will be met with the deployed Application, thus:
-  ![argocd-deployed-application-page](image-2.png)
+  ![Argo CD deployed application page showing the application status in the browser interface](image-2.png)
 
 The complimentary GitOps Repository can found [here](https://github.com/taofeekaoyusuf/score-board-gitops)
 
